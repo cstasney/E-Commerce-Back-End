@@ -31,14 +31,20 @@ router.get('/:id', (req, res) => {
     return;
   };
   res.status(200).json(categoryData)
-  .catch (err => {
-    console.log(err);
-    res.status(500).json;
-  });
+    .catch(err => {
+      console.log(err);
+      res.status(500).json;
+    });
 });
 
 router.post('/', (req, res) => {
   // create a new category
+  const categoryData = Category.create(req.body)
+  res.status(200).json(categoryData)
+    .catch(err => {
+      console.log(err);
+      res.status(500).json;
+    });
 });
 
 router.put('/:id', (req, res) => {
