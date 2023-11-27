@@ -15,7 +15,7 @@
 
 ⬇️ The full moive demonstrating funcationality can be downloaded here ⬇️
 
-[Movie](media\ecommercebackend.webm)  
+[Movie](/media/ecommercebackend.webm)  
 ## Acceptance Criteria
 
 ```md
